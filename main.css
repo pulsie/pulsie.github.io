@@ -1,0 +1,17 @@
+body{
+	background-color:black;
+	color: white;
+}
+a{
+padding-left:10%;
+padding-right:10%;
+padding-bottom:1%;
+padding-top:1%;
+background-color:#333333;
+border-style:solid;
+border-color:#810081;
+color:white;
+}
+h1{
+text-align:center;
+}
