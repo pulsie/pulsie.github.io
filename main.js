@@ -8594,7 +8594,7 @@ var app = (function () {
     });
     const Cn = ue([
       // song suggestion
-      "Train",
+      "Train - AM Gold",
       "Pokemon Gold/Silver/Crystal",
       "Kirby Super Star Ultra",
       "Persona 3",
