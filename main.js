@@ -916,13 +916,14 @@ var app = (function () {
               "title",
               (d =
                 "Listen to " +
-                e[1].artist +
-                " - " +
                 e[1].title +
-                " on SoundCloud")
-            ),
+                " - " +
+                e[1].artist +
+                " on SoundCloud") 
+            ),//dont think this matters? not sure. 
             M(n, "class", "no-underline"),
             M(t, "class", "p-3 pb-0 flex-col items-evenly");
+          
         },
         m(e, c) {
           g(e, t, c),
@@ -955,8 +956,6 @@ var app = (function () {
               d !==
                 (d =
                   "Listen to " +
-                  e[1].artist +
-                  " - " +
                   e[1].title +
                   " on SoundCloud") &&
               M(n, "title", d);
@@ -1185,8 +1184,8 @@ var app = (function () {
         r,
         s,
         i,
-        o = e[1].artist + "",
-        a = e[1].title + "";
+        o = e[1].title,
+        a = e[1].artist;
       return {
         c() {
           (t = w("p")),
@@ -3640,7 +3639,7 @@ var app = (function () {
         c() {
           (n = w("div")),
             (n.innerHTML =
-              '<p class="mb-3">A clone of <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, and <a href="https://heardle-kpop.glitch.me/" title="Heardle">K-Pop Heardle</a>, and <a href="https://anime-heardle.glitch.me/" title="Heardle">Anime Heardle</a> but for Video Game songs.</p> \n\n<p class="mb-3">The music is chosen from songs I recognise so may be easy :).</p> \n\n<p class="mb-3"> Thanks for playing!</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://glitch.com/">Glitch</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>. Video Game version made by inspectredc :)'),
+              '<p class="mb-3">A clone of <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, and <a href="https://heardle-kpop.glitch.me/" title="Heardle">K-Pop Heardle</a>, and <a href="https://anime-heardle.glitch.me/" title="Heardle">Anime Heardle</a> but for Video Game songs by github user jadesmithers modified for Train songs</p> \n\n<p class="mb-3">The songs are taken from the discography of Train</p> \n\n<p class="mb-3"> Thanks for playing!</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://glitch.com/">Glitch</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>. Video Game version made by inspectredc :)'),
             M(n, "class", "text");
         },
         m(e, t) {
@@ -3906,16 +3905,16 @@ var app = (function () {
         attemptInterval: 1.5e3,
         attemptIntervalAlt: [1e3, 2e3, 4e3, 7e3, 11e3, 16e3],
         maxAttempts: 6,
-        startDate: "2022-04-09",
+        startDate: "2022-04-18",
       },
       Jt = [
-        "Try using more gamer words", // FAILED
-        "So you're the guy who listens to the songs rather than playing the game", // First try
-        "A classic game, a classic tune",
-        "Only iron players have taken this many guesses",
-        "You must not have played this game",
-        "Took you long enough",
-        "The song must have looped by this point", // Sixth try
+        "Unfortunately, you failed", // FAILED
+        "Incredible", // First try
+        "Nice work",
+        "Nice work",
+        "Nice work",
+        "Nice work",
+        "Nice work", // Sixth try
       ];
     function Kt(t) {
       let n, r;
@@ -8594,119 +8593,7 @@ var app = (function () {
     });
     const Cn = ue([
       // song suggestion
-      "AM Gold",
-      "Pokemon Gold/Silver/Crystal",
-      "Kirby Super Star Ultra",
-      "Persona 3",
-      "Mario Kart Wii",
-      "Mario Paint",
-      "PaRappa the Rapper",
-      "Metroid",
-      "Professor Layton and the Diabolical Box",
-      "Megaman X",
-      "Sonic Mania",
-      "Pokemon Diamond/Pearl/Platinum",
-      "Silent Hill 2",
-      "EarthBound",
-      "New Super Mario Bros. Wii",
-      "Secret of Mana",
-      "Paper Mario",
-      "Pokemon Red/Blue/Yellow",
-      "Mega Man 2",
-      "Persona 2 Eternal Punishment",
-      "Phoenix Wright Ace Attorney",
-      "Panzer Dragoon",
-      "Mario Kart DS",
-      "Metroid Prime",
-      "Pokemon X/Y",
-      "Super Mario RPG: Legend of the Seven Stars",
-      "Mario Kart: Super Circuit",
-      "Mike Tyson's Punch-Out!!",
-      "Professor Layton and the Curious Village",
-      "Ninja Gaiden",
-      "Mario Strikers Charged",
-      "Pokemon Black/White",
-      "Mother",
-      "Ace Attorney Justice For All",
-      "Metroid Fusion",
-      "Sonic the Hedgehog",
-      "Persona 5",
-      "World of Warcraft",
-      "Minecraft",
-      "Super Mario Bros.",
-      "Super Mario World",
-      "Super Mario World 3",
-      "Metal Gear Solid 2",
-      "Gran Turismo",
-      "F-Zero",
-      "F-Zero GX",
-      "Silent Hill",
-      "Silent Hill 3",
-      "Silent Hill 4: The Room",
-      "Xenogears",
-      "Xenoblade Chronicles",
-      "Xenoblade Chronicles 2",
-      "Phoenix Wright Ace Attorney Trials and Tribulations",
-      "Halo: Combat Evolved",
-      "Halo 2",
-      "Halo 3",
-      "Ratchet and Clank",
-      "League of Legends",
-      "Teamfight Tactics",
-      "Overwatch",
-      "Hearthstone",
-      "Portal",
-      "Team Fortress 2",
-      "Left 4 Dead",
-      "Starcraft 2",
-      "Final Fantasy I",
-      "Final Fantasy II",
-      "Final Fantasy III",
-      "Final Fantasy IV",
-      "Final Fantasy V",
-      "Final Fantasy VI",
-      "Final Fantasy VII",
-      "Final Fantasy VIII",
-      "Final Fantasy IX",
-      "Final Fantasy X",
-      "Final Fantasy XII",
-      "Final Fantasy XIV",
-      "Dark Souls",
-      "Nier: Automata",
-      "Elden Ring",
-      "Hades",
-      "Doom",
-      "Bioshock",
-      "Doom 64",
-      "The Legend of Zelda",
-      "Zelda II: The Adventure of Link",
-      "The Legend of Zelda: A Link to the Past",
-      "The Legend of Zelda: Link's Awakening",
-      "The Legend of Zelda: Ocarina of Time",
-      "The Legend of Zelda: Majora's Mask",
-      "The Legend of Zelda: Wind Waker",
-      "The Legend of Zelda: Twilight Princess",
-      "The Legend of Zelda: Skyward Sword",
-      "The Legend of Zelda: Breath of the Wild",
-      "Simcity",
-      "Simcity 3000",
-      "The Sims 3",
-      "Sonic the Hedgehog (2006)",
-      "Sonic Adventure",
-      "Mortal Kombat",
-      "Tomb Raider",
-      "Mass Effect",
-      "Mass Effect 2",
-      "Bully",
-      "Grand Theft Auto: V",
-      "L.A. Noire",
-      "Undertale",
-      "Animal Crossing: New Horizons",
-      "LittleBigPlanet",
-      "Devil May Cry 5",
-      "Celeste",
-      "Cuphead",
-      "Stardew Valley",
+      "AM Gold - Train",
       "Bloodborne"
       ]),
       On = {
@@ -8720,176 +8607,12 @@ var app = (function () {
                 song: "Coconut Mall"
             },
             */
-            {
-                url: "https://soundcloud.com/vgmplanet/goldenrod-city-2?in=vgmplanet/sets/pokemon-crystal-ost",
-                answer: "Pokemon Gold/Silver/Crystal",
-                song: "Goldenrod City"
-            },
-            {
-                url: "https://soundcloud.com/vgmplanet/file-select-3",
-                answer: "Kirby Super Star Ultra",
-                song: "File Select"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/joy-1?in=vgmplanet/sets/shin-megami-tensei-persona-3",
-              answer: "Persona 3",
-              song: "Joy"
-            },
-            {
-              url: "https://soundcloud.com/user-272592510/mario-kart-wii-coconut-mall?in=user-272592510/sets/mario-kart-wii-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-              answer: "Mario Kart Wii",
-              song: "Coconut Mall"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/creative-exercise?in=vgmplanet/sets/mario-paint-ost",
-              answer: "Mario Paint",
-              song: "Creative Exercise"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/instructor-mooselinis-rap?in=vgmplanet/sets/parappa-the-rapper-ost",
-              answer: "PaRappa the Rapper",
-              song: "Instructor Mooselini's Rap"
-            },
-            {
-              url: "https://soundcloud.com/user-445991624/sonic-mania-chemical-plant-zone-act-1",
-              answer: "Sonic Mania",
-              song: "Chemical Plant Zone Act 1"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/5-kraids-lair?in=vgmplanet/sets/metroid-ost",
-              answer: "Metroid",
-              song: "Kraid's Lair"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/folsense-1?in=vgmplanet/sets/professor-layton-and-the-diabolical-box-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-              answer: "Professor Layton and the Diabolical Box",
-              song: "Folsense"
-            },  
+            //update: now song="", answer=song+band name
             {
               url: "https://soundcloud.com/trainofficial/am-gold",
-              answer: "AM Gold",
-              song: ""
+              answer: "AM Gold - Train",
+              song: " "
             },
-            {
-              url: "https://soundcloud.com/vgmplanet/eterna-forest?in=vgmplanet/sets/pokemon-diamond-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-              answer: "Pokemon Diamond/Pearl/Platinum",
-              song: "Eterna Forest"
-            },
-            {
-                url: "https://soundcloud.com/alexctba/theme-of-laura",
-                answer: "Silent Hill 2",
-                song: "Theme of Laura"
-            },
-            {
-                url: "https://soundcloud.com/vgmplanet/onett-theme",
-                answer: "EarthBound",
-                song: "Onett Theme"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/underground-3?in=vgmplanet/sets/new-super-mario-bros-wii-ost",
-              answer: "New Super Mario Bros. Wii",
-              song: "Underground"
-            },
-            {
-                url: "https://soundcloud.com/vgmplanet/fear-of-the-heavens",
-                answer: "Secret of Mana",
-                song: "Fear of the Heavens"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/106-goomba-village?in=vgmplanet/sets/paper-mario-ost",
-              answer: "Paper Mario",
-              song: "Goomba Village"
-            },
-            {
-                url: "https://soundcloud.com/vgmplanet/16-guide-2?in=vgmplanet/sets/pokemon-red-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-                answer: "Pokemon Red/Blue/Yellow",
-                song: "Guide"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/10-wood-man?in=vgmplanet/sets/mega-man-2-ost",
-              answer: "Mega Man 2",
-              song: "Wood Man"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/mayas-theme-1?in=vgmplanet/sets/persona-2-eternal-punishment-ost",
-              answer: "Persona 2 Eternal Punishment",
-              song: "Maya's Theme"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/steel-samurai?in=vgmplanet/sets/phoenix-wright-ace-attorney-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-              answer: "Phoenix Wright Ace Attorney",
-              song: "Steel Samurai"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/flight-orchestra?in=vgmplanet/sets/panzer-dragoon-ost",
-                answer: "Panzer Dragoon",
-                song: "Flight (Orchestra)"
-            },
-            {
-              url: "https://soundcloud.com/user409121565/mario-kart-ds-ost-waluigi",
-              answer: "Mario Kart DS",
-              song: "Waluigi Pinball"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/metroid-prime-title?in=vgmplanet/sets/metroid-prime-ost",
-              answer: "Metroid Prime",
-              song: "Metroid Prime Title"
-            },
-            {
-                url: "https://soundcloud.com/vgmplanet/lumiose-city?in=vgmplanet/sets/pokemon-x-and-y-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-                answer: "Pokemon X/Y",
-                song: "Lumiose City"
-            },
-            {
-              url: "https://soundcloud.com/user-272592510/super-mario-rpg-legend-of-54",
-              answer: "Super Mario RPG: Legend of the Seven Stars",
-              song: "Fight against Koopa"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/08-shy-guy-beach-cheep-cheep?in=vgmplanet/sets/mario-kart-super-circuit-ost",
-              answer: "Mario Kart: Super Circuit",
-              song: "Shy Guy Beach/Cheep-Cheep Island"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/18-warming-up-with-doc?in=vgmplanet/sets/mike-tysons-punch-out-ost",
-              answer: "Mike Tyson's Punch-Out!!",
-              song: "Warming Up With Doc"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/01-professor-laytons-theme?in=vgmplanet/sets/professor-layton-and-the&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-              answer: "Professor Layton and the Curious Village",
-              song: "Professor Layton's Theme"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/2-vow-of-revenge-opening-ii?in=vgmplanet/sets/ninja-gaiden-ost",
-              answer: "Ninja Gaiden",
-              song: "Vow of Revenge"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/sets/mario-strikers-charged-ost?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-              answer: "Mario Strikers Charged",
-              song: "School Stage"
-            },
-            {
-                url: "https://soundcloud.com/vgmplanet/driftveil-city?in=vgmplanet/sets/pokemon-black-and-white-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-                answer: "Pokemon Black/White",
-                song: "Driftveil City"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/4-field-1-pollyanna-i-believe?in=vgmplanet/sets/mother-ost",
-              answer: "Mother",
-              song: "Pollyanna (I believe in you)"
-            },
-            {
-                url: "https://soundcloud.com/vgmplanet/kurain-village?in=vgmplanet/sets/phoenix-wright-ace-attorney-justice-for-all-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-                answer: "Ace Attorney Justice For All",
-                song: "Kurain Village"
-            },
-            {
-              url: "https://soundcloud.com/vgmplanet/03-sector-1-srx-sr388?in=vgmplanet/sets/metroid-fusion-ost",
-              answer: "Metroid Fusion",
-              song: "Sector 1 (SRX) SR388 Simulation Area"
-            }
           ],
           Pn
         ).subscribe,
