@@ -8594,6 +8594,7 @@ var app = (function () {
     });
     const Cn = ue([
       // song suggestion
+      "Train",
       "Pokemon Gold/Silver/Crystal",
       "Kirby Super Star Ultra",
       "Persona 3",
@@ -8765,9 +8766,9 @@ var app = (function () {
               song: "Folsense"
             },  
             {
-              url: "https://soundcloud.com/vgmplanet/spark-mandrill?in=vgmplanet/sets/mega-man-x-ost",
-              answer: "Megaman X",
-              song: "Spark Mandrill"
+              url: "https://soundcloud.com/trainofficial/am-gold",
+              answer: "Train",
+              song: "AM Gold"
             },
             {
               url: "https://soundcloud.com/vgmplanet/eterna-forest?in=vgmplanet/sets/pokemon-diamond-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
