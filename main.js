@@ -8594,7 +8594,7 @@ var app = (function () {
     });
     const Cn = ue([
       // song suggestion
-      "Train - AM Gold",
+      "AM Gold",
       "Pokemon Gold/Silver/Crystal",
       "Kirby Super Star Ultra",
       "Persona 3",
@@ -8767,8 +8767,8 @@ var app = (function () {
             },  
             {
               url: "https://soundcloud.com/trainofficial/am-gold",
-              answer: "Train- AM Gold",
-              song: "AM Gold"
+              answer: "AM Gold",
+              song: ""
             },
             {
               url: "https://soundcloud.com/vgmplanet/eterna-forest?in=vgmplanet/sets/pokemon-diamond-ost&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
