@@ -1,1 +1,1 @@
-Heardle for Train, most code from https://github.com/inspectredc/inspectredc.github.io
+Heardle for Train, most code from https://github.com/inspectredc/inspectredc.github.io (contributed by @jadesmithers)
